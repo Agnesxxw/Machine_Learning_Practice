@@ -67,7 +67,7 @@ if __name__ == '__main__':
         for point in k_means.clf_[cat]:
             pyplot.scatter(point[0], point[1], c=('r' if cat == 0 else 'b'))
 
-    predict = [[2, 1], [6, 9]]
+    predict = [[2, 1], [6, 9], [3, 8], [10, 11], [4, 7]]
     for feature in predict:
         cat = k_means.predict(predict)
         pyplot.scatter(feature[0], feature[1], c=('r' if cat == 0 else 'b'), marker='x')
